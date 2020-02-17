@@ -1,4 +1,5 @@
 #Solve Schroedinger equation for 1D inifinte Square-Well potential. 
+#@Harindranath Ambalampitiya, UNL Physics and Astronomy
 import matplotlib.pyplot as plt
 import numpy as np
 pi=2.*np.arcsin(1)
