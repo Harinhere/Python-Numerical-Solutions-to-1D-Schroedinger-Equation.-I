@@ -47,7 +47,7 @@ for k in range(0,ne):
             eigenE[ieg_count-1]=Earr[k]
 #store the correct wavefunction to print
             for j in range(0,N):
-                psi_correct_all[ieg_count-1,j]=psi_correct[j]/norm_const
+                psi_correct_all[ieg_count-1,j]=psi_correct[j]/np.sqrt(norm_const)
     psiend0=psiend[k]
 print('Energy levels found:',ieg_count) 
 fig1=plt.figure(1)
