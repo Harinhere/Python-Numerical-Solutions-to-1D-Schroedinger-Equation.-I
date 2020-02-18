@@ -59,8 +59,9 @@ plt.scatter(eigenE,np.zeros(ieg_count),c='r')
 plt.savefig('1dsq_roots.pdf',bbox_inches = "tight")
 
 fig2=plt.figure(2)
-for j in range(0,6):   
-    plt.plot(xarr,psi_correct_all[j],label='n=%s'%(j+1))
+for j in range(0,2):   
+    plot(xarr,psi_correct_all[j],linestyle='dashed',label='n=%s'%(j+1))
+    plt.plot(xarr,np.sqrt(2/L)*np.sin((j+1)*pi*xarr/L),label='n=%s Analytical'%(j+1))
 plt.xlabel('x (a.u)')
 plt.ylabel('Psi(x)')
 plt.grid()
